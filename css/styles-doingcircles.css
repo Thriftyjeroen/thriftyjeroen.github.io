@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'MS Paint';
+  src: url('../fonts/MsPaint.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #245919;
+  color: #000000;
+  font-family: "MS Paint", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  opacity: 0.5 !important;
+}

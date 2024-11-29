@@ -90,3 +90,50 @@ jQuery(document).ready(function($){
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
+
+
+// Shows the portfolio text when visible on mobile
+document.addEventListener("DOMContentLoaded", function () {
+	const portfolioItems = document.querySelectorAll(".portfolio-thumb");
+	
+	// Function to enable Intersection Observer
+	const enableObserver = () => {
+		const options = {
+		root: null, // Uses the viewport as the boundary
+		rootMargin: "0px",
+		threshold: 1, // Trigger when % of the item is visible
+		};
+	
+		const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			const overlay = entry.target.querySelector(".portfolio-overlay");
+			if (entry.isIntersecting) {
+			overlay.classList.add("active"); // Show the description
+			} else {
+			overlay.classList.remove("active"); // Hide the description
+			}
+		});
+		}, options);
+	
+		portfolioItems.forEach((item) => observer.observe(item));
+	};
+	
+	// Run observer logic only for screens smaller than 768px
+	if (window.innerWidth < 768) {
+		enableObserver();
+	}
+	
+	// Add a resize listener to reapply logic if the screen size changes
+	window.addEventListener("resize", () => {
+		if (window.innerWidth < 768) {
+		enableObserver();
+		} else {
+		// Remove any active overlays when screen size increases
+		portfolioItems.forEach((item) => {
+			const overlay = item.querySelector(".portfolio-overlay");
+			overlay.classList.remove("active");
+		});
+		}
+	});
+	});
+	
