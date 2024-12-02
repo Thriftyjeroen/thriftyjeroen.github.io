@@ -334,16 +334,18 @@ hr {
 
 /* START ABOUT */
 .tm-about {
-  background: url('../images/banner.jpg');
+  background: url('../images/banner.gif');
   background-size: cover;
-  background-attachment: fixed;
   background-position: center center;
   padding-top: 60px;
+  min-height: 100vh;
   padding-bottom: 100px;
+  color: white !important;
 }
 
 .whoami {
-  text-shadow: 1px 1px 5px white;
+  color: white !important;
+  /*text-shadow: 1px 1px 5px rgb(0, 0, 0);*/
 }
 /* END ABOUT */
 
