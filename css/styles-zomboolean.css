@@ -5,11 +5,13 @@
   font-style: normal;
 }
 
-body {
+.navbar {
   background-color: #245919;
   color: #000000;
   font-family: "Showcard Gothic", Arial, Helvetica, sans-serif;
 }
+
+
 
 .navbar {
   opacity: 0.5 !important;
