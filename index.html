@@ -204,8 +204,23 @@
 				<div class="col-md-6 col-sm-6">					
 					<h2 class="title">Wie ben ik</h2>
 					<p><span class="tm-info-label">Naam</span> Jeroen Verboom</p>
-					<p><span class="tm-info-label">Verjaardag</span> 2 Januari, 2007</p>
-					<p><span class="tm-info-label">Email</span> thriftyjeroen@gmail.com</p>
+                    
+                    <p id="age"><span class="tm-info-label">Leeftijd</span></p>
+
+                    <script>
+                        try {
+                            let currentTime = new Date();
+                            let birthday = new Date("02/01/2007");
+                            let compare = Math.floor((currentTime - birthday) / 31536000000);
+                            document.getElementById("age").innerHTML += compare;
+                        }
+                        catch {
+                            document.getElementById("age").innerHTML += "NaN";
+                        }
+                    </script>
+                    
+                    
+					<p><span class="tm-info-label">Email</span> <a href= "mailto://thriftyjeroen@gmail.com">thriftyjeroen@gmail.com</a></p>
 				</div>
 				<div class="col-md-6 col-sm-6">
 					<h2 class="title">Skills</h2>
