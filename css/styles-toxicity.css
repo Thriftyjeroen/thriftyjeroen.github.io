@@ -1,0 +1,16 @@
+body {
+    background-color: #245919;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  opacity: 0.5 !important;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh;
+}
