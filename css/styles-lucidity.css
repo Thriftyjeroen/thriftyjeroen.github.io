@@ -11,20 +11,22 @@ body {
   font-family: "Cascadia Mono", monospace, Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-  opacity: 0.5 !important;
+.container-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;               /* space between items */
+    padding: 40px;
 }
 
-.image-container {
-  display: flex; /* Use Flexbox for centering */
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Hide any overflow */
+.hero-text {
+    flex: 1;                 /* allow text to take equal width */
+    font-size: 1.2rem;
 }
 
-.image-container img {
-  max-width: 100%; /* Scale to fit horizontally */
-  max-height: 100%; /* Scale to fit vertically */
-  object-fit: contain; /* Maintain aspect ratio and fit within bounds */
+.hero-image img {
+    max-width: 40vw;        /* control image size */
+    height: auto;
+    border-radius: 10px;     /* optional */
+    display: block;
 }
