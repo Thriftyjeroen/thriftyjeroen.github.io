@@ -30,21 +30,53 @@
 			</nav>
 		</div>
 	</div>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+
+    <br><br><br>
+
+    <div class="duckdash-hero">
+
+        <div class="hero-text left-text">
+            <p>This is Duck Dash!</p>
+            <p>A platformer made to learn how to work in 2D with Unity, this project has:</p>
+            <ul>
+                <li>2D sprites</li>
+                <li>Silly music</li>
+                <li>2D movement</li>
+                <li>Powerup to temporarily change movement</li>
+                <li>Collectables</li>
+                <li>Animations</li>
+                <li>Sound effects</li>
         </div>
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Duck Dash!</div>
-      </div>
+
+        <div class="unity-column">
+            <div id="unity-container" class="unity-desktop">
+                <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+                <div id="unity-loading-bar">
+                  <div id="unity-logo"></div>
+                  <div id="unity-progress-bar-empty">
+                    <div id="unity-progress-bar-full"></div>
+                  </div>
+                </div>
+                <div id="unity-warning"></div>
+                <div id="unity-footer">
+                  <div id="unity-webgl-logo"></div>
+                  <div id="unity-fullscreen-button"></div>
+                  <div id="unity-build-title">Duck Dash!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-text right-text">
+            <p>Links:</p>
+            <ul>
+                <li>GitHub: <a href="https://github.com/Thriftyjeroen/Project-2D-Platformer">Link</a></li>
+                <li><a href="Builds/duckdash.7z" download>Windows build</a></li>
+            </ul>
+        </div>
     </div>
+
+
+
     <script>
 
       var container = document.querySelector("#unity-container");
@@ -149,8 +181,6 @@
       document.body.appendChild(script);
 
     </script>
-    
-    <p>This is Duck Dash!
-    
+
   </body>
 </html>
