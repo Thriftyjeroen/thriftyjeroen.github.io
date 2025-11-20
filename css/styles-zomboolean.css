@@ -11,8 +11,22 @@
   font-family: "Showcard Gothic", Arial, Helvetica, sans-serif;
 }
 
+.container-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;               /* space between items */
+    padding: 40px;
+}
 
+.hero-text {
+    flex: 1;                 /* allow text to take equal width */
+    font-size: 1.2rem;
+}
 
-.navbar {
-  opacity: 0.5 !important;
+.hero-image img {
+    max-width: 40vw;        /* control image size */
+    height: auto;
+    border-radius: 10px;     /* optional */
+    display: block;
 }
